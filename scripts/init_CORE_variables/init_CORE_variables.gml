@@ -1,16 +1,23 @@
 // -- System Variables -- \\
+
+// -- Init show/Hide Debug flag | Triggers behavior in Camera controller -- \\
 global.debug_flag = true;
 global.debug_flag = -global.debug_flag;
 
+// -- Init Show/Hide UI flag | Triggers behavior in UI controller --  \\
+global.ui_flag    = true
+
+// -- Init Activate/Deactivate Sreenshake Flag | Triggers behavior in Camera controller -- \\
 global.screenshake_flag = false;
 
-
+// -- Init the default language -- \\
+global.language = Languages.English
 
 
 
 
 // -- Store Direction Angles as easy to reference enums -- \\
-enum directions {
+enum Directions {
    N   = 90,
    NNE = 67.5,
    NE  = 45,
@@ -27,6 +34,17 @@ enum directions {
    WNW = 157.5,
    NW  = 135,
    NNW = 112.5
+}
+
+// -- Initilize Languages as easy to reference enums -- \\
+global.language_count = 5
+enum Languages {
+	English = 1,
+	French  = 2,
+	Italian = 3,
+	German  = 4,
+	Spanish = 5,
+
 }
 
 // -- Draw Settings -- \\
