@@ -38,13 +38,13 @@ enum Directions {
 
 // -- Initilize Languages as easy to reference enums -- \\
 global.language_count = 5
+
 enum Languages {
 	English = 1,
 	French  = 2,
 	Italian = 3,
 	German  = 4,
 	Spanish = 5,
-
 }
 
 // -- Draw Settings -- \\
