@@ -1,19 +1,41 @@
-// -- System Variables -- \\
+// -- Global Variables -- \\
 
-// -- Init show/Hide Debug flag | Triggers behavior in Camera controller -- \\
-global.debug_flag = true;
+global.gamestate = Gamestates.Initilization;
+
+// -- Init show/Hide Debug flag | Triggers behavior in UI controller -- \\
+global.debug_flag =  true;
 global.debug_flag = -global.debug_flag;
 
+// -- Allows one variable disabling of all dev features before release -- \\
+global.developer_mode_flag = true;
+
 // -- Init Show/Hide UI flag | Triggers behavior in UI controller --  \\
-global.ui_flag    = true
+global.ui_flag = true;
 
 // -- Init Activate/Deactivate Sreenshake Flag | Triggers behavior in Camera controller -- \\
 global.screenshake_flag = false;
 
-// -- Init the default language -- \\
-global.language = Languages.English
+// -- Init the default gamepad control scheme ( Set to 0 to disable gamepad )-- \\
+global.gamepad_layout = Gamepad_Layouts.Default;
 
 
+//---------------------------------------------------------------------\\
+   // -- Globals Initilized Elsewhere -- \\
+//----------------------------------------------------------------------\\
+// ** Loaded from settings.ini ** \\		  global.language        = default = Languages.English 
+// ** Loaded from settings.ini ** \\		  global.letterbox_flag  = default = true
+
+// ** Initilized in init_resolution() ** \\   global.MonitorW        = Height of Monitor
+// ** Initilized in init_resolution() ** \\   global.MonitorH        = Width  of Monitor
+// ** Initilized in init_resolution() ** \\   global.Xoffset         = (global.MonitorW-Scaled Width)/2;
+// ** Initilized in init_resolution() ** \\   global.Yoffset         = (global.MonitorW-Scaled Hight)/2;
+// ** Initilized in init_resolution() ** \\   global.Xcenter         = 1920/2;
+// ** Initilized in init_resolution() ** \\   global.Ycenter         = 1080/2;
+
+
+//--------------------\\
+   // Enumerations \\
+//---------------------\\
 
 
 // -- Store Direction Angles as easy to reference enums -- \\
@@ -37,8 +59,7 @@ enum Directions {
 }
 
 // -- Initilize Languages as easy to reference enums -- \\
-global.language_count = 5
-
+global.language_count = 5;
 enum Languages {
 	English = 1,
 	French  = 2,
@@ -47,8 +68,35 @@ enum Languages {
 	Spanish = 5,
 }
 
+// -- Initilize Gamestates as easy to reference enums -- \\
+enum Gamestates {
+	Initilization = 1,
+	Pause         = 2,
+	Game          = 3,
+	Menu          = 4
+}
+
+// Initilize Gamepad Control Schemes as easy to reference enums -- \\
+global.gamepad_layout_count = 1;
+enum Gamepad_Layouts{
+	Disabled   = 0,
+	Default    = 1,
+	Southpaw   = 2,
+	Right_Only = 3,
+	Left_Only  = 4
+}
+
+
+
 // -- Draw Settings -- \\
 draw_set_halign(fa_center);
+
+
+
+
+//---------------------\\
+   // Initilizations \\
+//----------------------\\
 
 // -- Load connected gamepads into array -- \\
 init_gamepads();

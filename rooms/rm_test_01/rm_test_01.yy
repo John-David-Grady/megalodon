@@ -164,7 +164,7 @@
             "hspeed": -1,
             "hview": 360,
             "inherit": false,
-            "objId": "00000000-0000-0000-0000-000000000000",
+            "objId": "b702b07f-3458-4d00-a63d-3c65fbf8793c",
             "vborder": 32,
             "visible": true,
             "vspeed": -1,
