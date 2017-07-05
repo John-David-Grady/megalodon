@@ -15,8 +15,8 @@ global.Yoffset = (global.MonitorH-1080)/2;
 surface_resize(application_surface,1920,1080)
 
 // -- Store Center of Screen for UI Purposes -- \\
-global.Xcenter = 1920/2;
-global.Ycenter = 1080/2;
+#macro Xcenter  ( 1920 / 2 )
+#macro Ycenter  ( 1080 / 2 )
 
 
 // -- Scale UI -- \\

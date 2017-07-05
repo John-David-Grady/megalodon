@@ -5,8 +5,8 @@ if(keyboard_check_pressed(vk_f3)){global.debug_flag = -global.debug_flag;}
 if(keyboard_check_pressed(vk_f4)){global.ui_flag = -global.ui_flag;}
 
 // -- Cycle Languages -- \\
-if(keyboard_check_pressed(vk_f12) && global.developer_mode_flag){
-	if(global.language < global.language_count){
+if(keyboard_check_pressed(vk_f12) && developer_mode_flag){
+	if(global.language < language_count){
 		global.language += 1;
 	}
 	else{

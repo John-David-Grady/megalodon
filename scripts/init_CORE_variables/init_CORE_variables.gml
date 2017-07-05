@@ -6,9 +6,6 @@ global.gamestate = Gamestates.Initilization;
 global.debug_flag =  true;
 global.debug_flag = -global.debug_flag;
 
-// -- Allows one variable disabling of all dev features before release -- \\
-global.developer_mode_flag = true;
-
 // -- Init Show/Hide UI flag | Triggers behavior in UI controller --  \\
 global.ui_flag = true;
 
@@ -18,6 +15,8 @@ global.screenshake_flag = false;
 // -- Init the default gamepad control scheme ( Set to 0 to disable gamepad )-- \\
 global.gamepad_layout = Gamepad_Layouts.Default;
 
+// -- Allows one variable disabling of all dev features before release -- \\
+#macro developer_mode_flag true
 
 //---------------------------------------------------------------------\\
    // -- Globals Initilized Elsewhere -- \\
@@ -29,16 +28,19 @@ global.gamepad_layout = Gamepad_Layouts.Default;
 // ** Initilized in init_resolution() ** \\   global.MonitorH        = Width  of Monitor
 // ** Initilized in init_resolution() ** \\   global.Xoffset         = (global.MonitorW-Scaled Width)/2;
 // ** Initilized in init_resolution() ** \\   global.Yoffset         = (global.MonitorW-Scaled Hight)/2;
-// ** Initilized in init_resolution() ** \\   global.Xcenter         = 1920/2;
-// ** Initilized in init_resolution() ** \\   global.Ycenter         = 1080/2;
+// ** Initilized in init_resolution() ** \\   Constant Xcenter       = 1920/2;
+// ** Initilized in init_resolution() ** \\   Constant Ycenter       = 1080/2;
 
 
-//--------------------\\
+
+
+//-----------------------------------------------------------------------\\
    // Enumerations \\
-//---------------------\\
-
+//------------------------------------------------------------------------\\
 
 // -- Store Direction Angles as easy to reference enums -- \\
+#macro direction_count      16
+#macro direction_increment  ( 360 / direction_count )
 enum Directions {
    N   = 90,
    NNE = 67.5,
@@ -59,7 +61,7 @@ enum Directions {
 }
 
 // -- Initilize Languages as easy to reference enums -- \\
-global.language_count = 5;
+#macro language_count 5
 enum Languages {
 	English = 1,
 	French  = 2,
@@ -77,7 +79,7 @@ enum Gamestates {
 }
 
 // Initilize Gamepad Control Schemes as easy to reference enums -- \\
-global.gamepad_layout_count = 1;
+#macro gamepad_layout_count 1
 enum Gamepad_Layouts{
 	Disabled   = 0,
 	Default    = 1,
