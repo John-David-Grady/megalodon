@@ -22,4 +22,5 @@ switch(global.language){
 if(global.ui_flag){
 	draw_text(x,y,test_text)
 	draw_text(x+200,y+200,global.language)
+	draw_text(x+200,y+200,manuverability)
 }

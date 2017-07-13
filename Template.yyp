@@ -328,6 +328,14 @@
             }
         },
         {
+            "Key": "6a5ed1c9-caa5-43a0-9a73-93e55e3b9faa",
+            "Value": {
+                "id": "eb1d1776-dd39-41d6-b74b-f3ebc9340e20",
+                "resourcePath": "scripts\\raffel_select\\raffel_select.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6cb89276-41f1-472a-9145-758b46f4ca96",
             "Value": {
                 "id": "efc89a19-a66a-493c-b960-3077f178fea1",
@@ -712,6 +720,14 @@
             }
         },
         {
+            "Key": "f60a6ad9-8be5-4775-a329-185d5b20ab24",
+            "Value": {
+                "id": "14ed3818-1e9f-4a36-ac97-c3ebb3b7a799",
+                "resourcePath": "views\\f60a6ad9-8be5-4775-a329-185d5b20ab24.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "fa37ca5f-7843-4b19-921e-5be9446c8a1e",
             "Value": {
                 "id": "d3237295-86e4-4c63-b3d1-ffee6d7779c4",
@@ -745,6 +761,7 @@
         }
     ],
     "script_order": [
+        "6a5ed1c9-caa5-43a0-9a73-93e55e3b9faa",
         "1b26a84d-6b33-4b20-bcc9-d61e11d20e9f",
         "10d62d6e-2d4e-44c5-a37a-11f9072906fe",
         "fa37ca5f-7843-4b19-921e-5be9446c8a1e",

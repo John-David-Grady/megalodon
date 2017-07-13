@@ -9,7 +9,8 @@
         "b08a8bda-8cbf-483d-a47c-b2769b94091d",
         "1cde91da-34dd-43d4-9013-2bfed5864539",
         "7df275c8-2a19-4b34-947d-a992bfb14efa",
-        "a79302b3-1643-4dba-9efa-f7996df2517f"
+        "a79302b3-1643-4dba-9efa-f7996df2517f",
+        "f60a6ad9-8be5-4775-a329-185d5b20ab24"
     ],
     "filterType": "GMScript",
     "folderName": "CORE Scripts",
